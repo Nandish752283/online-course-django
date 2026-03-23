@@ -29,3 +29,4 @@ def show_exam_result(request, submission_id):
         'correct': correct,
         'total': total
     })
+path('result/<int:submission_id>/', views.show_exam_result)
