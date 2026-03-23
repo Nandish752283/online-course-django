@@ -1,0 +1,7 @@
+<h1>{{ course.name }}</h1>
+
+<ul>
+{% for lesson in course.lesson_set.all %}
+    <li>{{ lesson.title }}</li>
+{% endfor %}
+</ul>
